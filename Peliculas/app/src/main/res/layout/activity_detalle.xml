@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenb"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nombre:" />
+
+        <EditText
+            android:id="@+id/nombred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe nuevo nombre"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genero:" />
+
+        <EditText
+            android:id="@+id/generod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe nuevo genero"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Año:" />
+
+        <EditText
+            android:id="@+id/aniod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Escribe nuevo año"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/editard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar pelicula" />
+
+        <Button
+            android:id="@+id/eliminard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:text="Eliminar pelicula"
+            app:iconTint="#FF0000" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
