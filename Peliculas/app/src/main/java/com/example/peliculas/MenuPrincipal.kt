@@ -14,6 +14,7 @@ import android.widget.ListView
 import android.widget.Toolbar
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.oAuthCredential
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -95,7 +96,11 @@ class MenuPrincipal : AppCompatActivity() {
                 Log.w(TAG, "Failed to read value.", error.toException())
             }
         })
+        val btnAgregar = findViewById<FloatingActionButton>(R.id.agregar)
 
+        btnAgregar.setOnClickListener{
+            startActivity(Intent(this, Agregar::class.java))
+        }
 
     }
 
